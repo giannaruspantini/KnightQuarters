@@ -86,24 +86,37 @@
                 </div>
             </div>
         </header>
-        <!-- Quote/testimonial aside-->
-        <aside class="text-center bg-gradient-primary-to-secondary">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="text-white mb-4">
-                            <h2 class="display-4 lh-1 mb-4">Designed for Knights, by Knights</h2>
-                        <div class="h2 fs-1 text-white mb-4"><p>DIG 4172c - Spring 2025</p>
-                            <ul> 
-                                <li>Cole Davison - Backend Developer</li>
-                                <li>Gianna Ruspantini - Frontend Developer & UX Researcher</li>
-                                <li>Anthony Ugwu - UI/UX Designer</li>
-                                <li>Evence Eliassant - Graphic Designer</li>
-                            </ul></div>
-                    </div>
-                </div>
+<!-- Quote/Testimonial Aside -->
+<section class="bg-gradient-primary-to-secondary text-white py-5 text-center">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <h2 class="display-4 fw-bold mb-4">Designed for Knights, by Knights</h2>
+                <p class="h4 mb-3">DIG 4172c - Spring 2025</p>
+                <ul class="list-unstyled fs-5">
+                    <li><strong>Cole Davison</strong> – Backend Developer</li>
+                    <li><strong>Gianna Ruspantini</strong> – Frontend Developer & UX Researcher</li>
+                    <li><strong>Anthony Ugwu</strong> – UI/UX Designer</li>
+                    <li><strong>Evence Eliassant</strong> – Graphic Designer</li>
+                </ul>
             </div>
-        </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Image Section -->
+<section class="py-5 bg-light text-center">
+    <div class="container px-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-xl-6">
+                <img src="assets/img/thewhy.jpg" alt="Knight Quarters prototype image 1" class="img-fluid rounded shadow" />
+            </div>
+            <div class="col-xl-6">
+                <img src="assets/img/Thewhy1.jpg" alt="Knight Quarters prototype image 2" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+    </div>
+</section>
 
 
         <section class="bg-light">
@@ -135,7 +148,59 @@
             </div>
         </section>
         
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8 text-center">
+                        <img style="max-width: 100%; max-height: 100%;" src="assets/img/User Survey on our low fidelity prototype (1).jpg" alt="Image description"  />
+                    </div>
+                </div>
+                <section class="bg-light">
+                    <div class="container px-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="text-center mb-5">
+                                    <h2 class="section-heading">Key Findings - Emergent Needs</h2>
+                                    <p class="section-subheading">Insights gathered from participant surveys</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="key-finding-item">
+                                            <h3>Ease of Navigation
+                                            </h3>
+                                            <p>60% of participants were able to locate key features like their user profile and the search page with minimal effort. Users appreciated the intuitive layout and noted that minimal guidance was needed to explore the prototype effectively.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="key-finding-item">
+                                            <h3>Icon Clarity and Recognition
+                                            </h3>
+                                            <p>100% indicated a keen interest in engaging features that make studying more interactive and rewarding. There is a clear demand for gamification elements and motivational tools to enhance study habits and maintain focus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="key-finding-item">
+                                            <h3>Text Legibility and Layout
+                                            </h3>
+                                            <p>Users highlighted that the text was easy to read and the layout made information accessible. Clear labeling and readable fonts contributed to a smoother user experience across different screens.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="key-finding-item">
+                                            <h3>Mixed Feedback on Visual Appeal</h3>
+                                            <p>Participants indicated that the current aesthetic felt underwhelming, signaling a need to enhance the visual identity and polish.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <p class="section-paragraph">Participants described the experience as generally positive, averaging 3.8/5 for overall satisfaction. However, this also suggests room for improvement in areas like engagement, look-and-feel, and user delight.
 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         
 
 
@@ -173,15 +238,62 @@
             </div>
         </section>
 
+        <section class="py-5">
+            <div class="container">
+              <h2 class="mb-4 text-center">Issues and Resolutions</h2>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Issue</th>
+                      <th>Description</th>
+                      <th>Resolution</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Backend Is No Longer Responsive</td>
+                      <td>Data from the frontend is no longer being read by the backend due to me playing around with files I had no business of touching.</td>
+                      <td>Reinstall Xamp in hopes of returning files back to their default settings.</td>
+                    </tr>
+                    <tr>
+                      <td>Comment Length Handling</td>
+                      <td>Comment input overflow goes outside of the comment container.</td>
+                      <td>Implement a vertical ScrollView to comment container.</td>
+                    </tr>
+                    <tr>
+                      <td>Comment Error Handling</td>
+                      <td>Comment error on Search Page was being displayed in the wrong spot.</td>
+                      <td>Implement a new useState variable to differentiate error handling between the search bar and the comments.</td>
+                    </tr>
+                    <tr>
+                      <td>Community Navigation Not Functional</td>
+                      <td>Community navigation was not rendering associated posts.</td>
+                      <td>Ensure Axios call is sending the community_id to the API endpoint.</td>
+                    </tr>
+                    <tr>
+                      <td>Direct Messaging Not Functional</td>
+                      <td>Direct messages are not being sent to the user.</td>
+                      <td>Ensure Axios call is sending and receiving the correct data from the backend.</td>
+                    </tr>
+                    <tr>
+                      <td>Following and Likes Not Functional</td>
+                      <td>The interface to follow other users and like comments and posts were not included on the frontend.</td>
+                      <td>Reevaluate front-end interface to ensure all content necessary for core functions is included.</td>
+                    </tr>
+                    <tr>
+                      <td>WGAC Criteria Not Met</td>
+                      <td>Color contrast ratio did not meet the required 4.5:1.</td>
+                      <td>Design revisions were implemented.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+          
 
 
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8 text-center">
-                        <img style="max-width: 100%; max-height: 100%;" src="assets/img/User Survey on our low fidelity prototype (1).jpg" alt="Image description">
-                    </div>
-                </div>
                 <section class="bg-light">
                     <div class="container px-5">
                         <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
@@ -213,51 +325,6 @@
 
 
 
-
-
-        
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center mb-5">
-                            <h2 class="section-heading">Key Findings - Emergent Needs</h2>
-                            <p class="section-subheading">Insights gathered from participant surveys</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="key-finding-item">
-                                    <h3>Community and Support</h3>
-                                    <p>80% of participants expressed a strong desire for a platform that fosters community and emotional support during their study journey. They highlighted the importance of connecting with peers facing similar challenges and receiving encouragement.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="key-finding-item">
-                                    <h3>Interactive Features</h3>
-                                    <p>75% indicated a keen interest in engaging features that make studying more interactive and rewarding. There is a clear demand for gamification elements and motivational tools to enhance study habits and maintain focus.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="key-finding-item">
-                                    <h3>Resource Sharing</h3>
-                                    <p>70% emphasized the need for a platform that facilitates easy sharing and access to study resources. Users want a centralized hub where they can discover and share study materials, tips, and notes effortlessly.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="key-finding-item">
-                                    <h3>Personalized Learning</h3>
-                                    <p>65% expressed interest in personalized learning features that cater to individual study preferences and learning styles. Adaptive learning paths and recommendations based on user progress were highlighted as beneficial.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <p class="section-paragraph">These emergent needs underscore the importance of creating a social media studying platform that not only connects users but also enhances their study experience through interactive tools, robust resource sharing capabilities, and personalized learning opportunities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                
 
 
         <section class="bg-light">
